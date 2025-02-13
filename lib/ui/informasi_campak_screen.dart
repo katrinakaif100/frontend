@@ -22,7 +22,7 @@ class _InformasiCampakScreenState extends State<InformasiCampakScreen> {
   Future<void> _loadInformasiCampakFromBackend() async {
     try {
       final response = await http.get(
-        Uri.parse('https://www.deteksicampak.my.id/api/informasi_campak'),
+        Uri.parse('https://api.deteksicampak.my.id/api/informasi_campak'),
         headers: {
           'Authorization': 'Bearer kuncirahasiaku',
         },

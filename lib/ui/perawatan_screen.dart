@@ -23,7 +23,7 @@ class _PerawatanCampakState extends State<PerawatanCampak> {
   Future<void> _ambilSemuaDataDariServer() async {
     try {
       final response = await http.get(
-        Uri.parse('https://www.deteksicampak.my.id/api/perawatan'),
+        Uri.parse('https://api.deteksicampak.my.id/api/perawatan'),
         headers: {
           'Authorization':
               'Bearer kuncirahasiaku', // Tambahkan jika perlu autentikasi

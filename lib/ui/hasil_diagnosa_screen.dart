@@ -159,7 +159,7 @@ class HasilDiagnosaScreenState extends State<HasilDiagnosaScreen> {
   Future<void> _kirimDataRiwayat(Map<String, dynamic> dataRiwayat) async {
     try {
       final response = await http.post(
-        Uri.parse('https://www.deteksicampak.my.id/api/riwayat_diagnosa'),
+        Uri.parse('https://api.deteksicampak.my.id/api/riwayat_diagnosa'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer kuncirahasiaku',

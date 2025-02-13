@@ -142,7 +142,7 @@ class _RiwayatDiagnosaScreenState extends State<RiwayatDiagnosaScreen> {
       // Kirim data riwayat ke backend
       final encodedRiwayat = jsonEncode(riwayatDenganId);
       final postResponse = await http.post(
-        Uri.parse('https://www.deteksicampak.my.id/api/riwayat_diagnosa'),
+        Uri.parse('https://api.deteksicampak.my.id/api/riwayat_diagnosa'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer kuncirahasiaku',

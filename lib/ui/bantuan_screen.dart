@@ -21,7 +21,7 @@ class _BantuanScreenState extends State<BantuanScreen> {
   // Fungsi untuk mengambil data FAQ dari backend
   Future<List<Map<String, String>>> _fetchFAQData() async {
     final response = await http.get(
-      Uri.parse('https://www.deteksicampak.my.id/api/faq'),
+      Uri.parse('https://api.deteksicampak.my.id/api/faq'),
       headers: {
         'Authorization':
             'Bearer kuncirahasiaku', // Token bisa diubah sesuai kebutuhan

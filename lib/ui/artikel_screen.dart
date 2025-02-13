@@ -16,7 +16,7 @@ class _ArtikelScreenState extends State<ArtikelScreen> {
   Future<List<Map<String, String>>> _ambilDataArtikel() async {
     try {
       final response = await http.get(
-        Uri.parse('http://192.168.0.140:8080/api/artikel'),
+        Uri.parse('https://api.deteksicampak.my.id/api/artikel'),
         headers: {
           'Authorization':
               'Bearer kuncirahasiaku', // Token bisa diubah sesuai kebutuhan

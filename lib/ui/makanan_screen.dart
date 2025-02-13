@@ -22,7 +22,7 @@ class _MakananCampakState extends State<MakananCampak> {
   Future<void> _ambilDataMakananDariServer() async {
     try {
       final response = await http.get(
-        Uri.parse('https://www.deteksicampak.my.id/api/makanan'),
+        Uri.parse('https://api.deteksicampak.my.id/api/makanan'),
         headers: {
           'Authorization':
               'Bearer kuncirahasiaku', // Token bisa diubah sesuai kebutuhan
